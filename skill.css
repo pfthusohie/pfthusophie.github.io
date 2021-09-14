@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	src:url("font/Bad Signal.otf");
+	font-family:Bad Signal;
+	src:url("font/Nesans Semi Bold.ttf");
+	font-family:Nesans;
+	src:url("font/AcneDemo-Regular.ttf");
+	font-family:AcneDemo-Regular;
+	src:url("font/Calculator.ttf");
+	font-family:Calculator;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: black;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.column {
+	width: 50%;
+	height: 100vh;
+}
+
+.left {
+	position: relative;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: url("d13449fb76b34cb71584f5bfb7c6dee9.gif") no-repeat 50% 50%;
+	background-size: 910px;
+}
+
+.right {
+	display: flex;
+	padding: 120px 0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img {
+	width: 700px;
+	height: 300px;
+}
+
+.img-1 {
+	background: url("icon.png") no-repeat 50% 50%;
+	background-size: cover;
+}
+.header {
+	color: white;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family:Calculator;
+	text-shadow: 1 1 1px #40D0FB;
+	padding-left: 30px;
+	line-height: 45px;
+}
+.header p {
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.header h1 {
+	position: relative;
+	font-size: 80px;
+	font-family:Bad Signal;
+	color: black;
+	text-shadow: #40D0FB 0px 0px 5px, #40D0FB 0px 0px 20px, #40D0FB 0px 0px 50px, 2px 2px 2px rgba(206,89,55,0);
+}
+.ml12 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+.link {
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.link a {
+	color: #00E8EC;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-family:Bad Signal;
+	padding-left: 35px;
+}
+
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+	}
+
+	.images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 900px) {
+	.column {
+		width: 100%;
+	}
+
+	.img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.header {
+		font-size: 15px;
+		padding: 80px;
+	}
+}

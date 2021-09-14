@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Untitled Document</title>
+	<link href="portfolio.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="body">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+	<div class="section1">
+		<div class="list">
+				<a href="#" class="hover">HOME</a>
+				<a href="#section3" class="hover">ABOUT ME</a>
+				<a href="#section4" class="hover">PORTFOLIO</a>
+				<a href="skill.html" class="hover">SKILLS</a>
+				<a href="contact.html" class="hover" target="_blank" >CONTATCS</a>
+		</div>
+			<div class="cursor"></div>
+	</div>
+	<div class="section2">
+		<div class="left">
+			<img src="tumblr_nk0g5nD5N51tevaano1_500.gif" style=" width:700px" >
+		</div>
+		<div class="right">
+			<h1 class="me" data-text="I AM A FREELANCER">I AM SOPHIE</h1>
+		</div>
+	</div>
+	
+	<div class="section3" id="section3">
+		<h1 data-aos="fade-up" data-aos-duration="2000"class="title1"> ABOUT ME</h1>
+		<hr>
+		<div data-aos="fade-up" data-aos-duration="2000"
+     data-aos-anchor-placement="top-bottom" class="aboutme">
+			<div class="inf">                                          
+				<ul>
+					<li><i class="fas fa-user-graduate"></i> Nguyen Hong Thu</li>
+					<li><i class="fas fa-birthday-cake"></i> 13 Semtember 1995</li>
+					<li><i class="fas fa-phone-alt"></i> 078 357 3979</li>
+					<li><i class="fas fa-house-user"></i> Binh Duong</li>
+				</ul>
+			</div>
+			<div class="inf2">
+				<ul>
+					<li><i class="fas fa-briefcase"></i> Freelancer</li>
+					<li><i class="fas fa-envelope-square"></i> nguyenhongthu13995@gmail.com</li>
+					<li><i class="fas fa-graduation-cap"></i> SAIGON ACT</li>
+					<li><i class="fas fa-book-open"></i> Arena Multimedia</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="section4" id="section4">
+		<div class="hinhtt" data-aos="fade-up"
+     data-aos-duration="3500"><img src="pf.gif"></div>
+		<div class="title2">
+			<h1 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="2500" class="title22">PORTFOLIO</h1>
+		</div>
+	</div>
+		
+	<div class="section5">
+			<div class="dglogo" data-aos="fade-down" data-aos-easing="linear"
+     data-aos-duration="5500"><img src="bbb.png" style="width:650px"></div>
+			<div class="mockup" data-aos-duration="2000"class><img src="cd.png" style="width:750px"></div>
+		
+	</div>
+	
+	<div class="section6">
+		<div class="element"></div>
+	</div>
+	
+	<div class="section7">
+		<div class="hinhsp">
+			<div class="mockup" data-aos="fade-up"
+     data-aos-duration="3000"><img src="pump-01.png" style="width:680px"></div>
+		</div>
+		<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"><img src="design.png" style="width:600px">
+		</div>
+	</div>
+	
+	<div class="section8">
+		<div data-aos="zoom-out" data-aos-duration="2000" class="images-list">
+			<img src="hinhanh/IMG_9694.JPEG">
+			<img src="hinhanh/IMG_9693.JPEG">
+			<img src="hinhanh/IMG_9688.JPEG">
+			<img src="hinhanh/IMG_9710.JPEG">
+			<img src="hinhanh/IMG_9684.JPEG">
+			<img src="hinhanh/IMG_9645.JPEG">
+			<img src="hinhanh/IMG_9642.JPEG">
+			<img src="hinhanh/IMG_9721.JPEG">
+			<img src="hinhanh/IMG_9738.JPEG">
+			<img src="hinhanh/IMG_9726.JPEG">
+		</div>
+	</div>
+	<div class="section9">
+		<div data-aos="flip-left" data-aos-duration="3000" class="ruou">
+			<img src="chival21.jpg" style="width:900px">
+		</div>
+	</div>
+	<div class="section10">
+		<div class="footer">
+				<div class="socailmedia">
+					<a href="https://www.facebook.com/thusophie.95" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://www.instagram.com/thusophie"><i class="fab fa-instagram"></i></a>
+					<a href="contact.html" target="_blank"><i class="fas fa-envelope-square"></i></a>
+				</div>
+		</div>
+		<p class="since">- Since 2021 -</p>
+	</div>
+	
+</div>
+	<script>
+
+(function () {
+
+      const link = document.querySelectorAll('nav > .hover');
+      const cursor = document.querySelector('.cursor');
+
+      const animateit = function (e) {
+            const span = this.querySelector('span');
+            const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+            if (e.type === 'mouseleave') span.style.transform = '';
+      };
+
+      const editCursor = e => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+      };
+
+      link.forEach(b => b.addEventListener('mousemove', animateit));
+      link.forEach(b => b.addEventListener('mouseleave', animateit));
+      window.addEventListener('mousemove', editCursor);
+
+})();
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>
+  AOS.init();
+</script>
+<script>
+  AOS.init();
+</script>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

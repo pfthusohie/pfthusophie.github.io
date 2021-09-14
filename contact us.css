@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	src:url("font/FogtwoNo5.ttf");
+	font-family:FogtwoNo5;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	font-family:FogtwoNo5;
+}
+.container {
+	background-image:url("Ảnh chụp Màn hình 2021-09-10 lúc 16.56.08.gif");
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	display: flex;
+    justify-content: center;
+	padding-top: 80px;
+  
+}
+.container .contact {
+	background-color:none;
+	width: 600px;
+	height: 650px;
+	text-align:center;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	border: 11px double #FCFCFC;
+	border-radius: 31px;
+	font-size: 27px;
+	letter-spacing: 4px;
+}
+
+.container .contact input {
+	width: 400px;
+	padding: 15px;
+	margin-top: 30px;
+	border-radius: 10px;
+	font-size: 16px;
+}
+.container .contact input:hover { 
+	box-shadow: 4px -4px 15px 0px #FF1F1F, -9px 6px 11px 0px #FF0808, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 4px -4px 15px 0px #FF1F1F, -9px 6px 11px 0px #FF0808, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.container .contact button {
+	width: 170px;
+	margin-top: 30px;
+	margin-left: 310px; 
+	padding: 10px;
+	border-radius: 30px;
+	font-size: 20px;
+	background-image:url("5cdd52305a465e60c2d2baf2ebd7689b.gif");
+	background-position: center;
+	box-shadow: 4px -4px 15px 0px #FF1F1F, -9px 6px 11px 0px #FF0808, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 4px -4px 15px 0px #FF1F1F, -9px 6px 11px 0px #FF0808, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.container .contact button:hover {
+	box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
